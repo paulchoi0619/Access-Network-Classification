@@ -1,6 +1,5 @@
 # Access-Network-Classification
 
-# Access-Network-Classification
 
 A notebook-based machine learning project for **access network classification**.
 
@@ -62,23 +61,21 @@ The repository also includes multiple Transformer experiment notebooks with diff
 
 ## Reported Results
 
-Based on the notebook outputs currently visible in the repository:
-
 | Model | Test Accuracy | Test Macro F1 | Notes |
 |------|---------------:|--------------:|------|
 | kNN | 0.5833 | 0.5746 | Simple baseline |
-| XGBoost | 0.8132 | 0.7999 | Strongest visible performance |
+| XGBoost | 0.8132 | 0.7999 | Strongest performance |
 | Default Transformer | 0.4783 | 0.3827 | Higher training/inference cost in shown run |
 
 > These values are the mean results reported across 5 runs in the notebooks currently available in the repo.
 
 ---
 
-## Example Findings
+## Findings
 
-- **XGBoost** appears to perform best among the visible results.
+- **XGBoost** performs best.
 - **kNN** provides a simple baseline for comparison.
-- The visible **default Transformer** results underperform the classical baselines in the current configuration.
+- The **Transformer** results underperform the classical baselines in the default configuration.
 
 This suggests that, for the current dataset/setup, classical tabular methods may be more effective than the tested Transformer configuration.
 
